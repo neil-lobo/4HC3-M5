@@ -17,6 +17,7 @@
         <a class={"button" + ((data.route === "/(app)/friends") ? " selected" : "")} href="/friends">
             Friends
         </a>
+        <a href="/">Logout</a>
     </div>
     <slot />
 </div>
