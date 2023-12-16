@@ -72,7 +72,7 @@
     }
 
     &.selected {
-        border: black solid 1px;
+        background-color: #d8d8d8;
     }
 }
 </style>
