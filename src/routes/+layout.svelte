@@ -1,2 +1,80 @@
-nav
-<slot />
+<script>
+    import logo from '$lib/images/mc.png';
+
+    export let data;
+
+    console.log(data.route);
+
+
+</script>
+
+<div id="app">
+    <div id="sidebar">
+        <img class="logo" src={logo} alt="logo" width="50%">
+        <a class={"button" + ((data.route === "/servers") ? " selected" : "")} href="/servers">
+            Servers
+        </a>
+        <a class={"button" + ((data.route === "/communities") ? " selected" : "")} href="/communities">
+            Community
+        </a>
+        <a class={"button" + ((data.route === "/friends") ? " selected" : "")} href="/friends">
+            Friends
+        </a>
+    </div>
+    <slot />
+</div>
+
+<style scoped lang="scss">
+#app {
+    display: flex;
+    flex-direction: row;
+}
+
+#sidebar {
+    height: 100vh;
+    width: 15vw;
+    /* border: red solid 1px; */
+    background-color: #E6E6E6;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo {
+    margin-bottom: 100px;
+}
+
+.button {
+    text-decoration: none;
+    // unset: all;
+    color: black;
+    background-color: #C3C3C3;
+    width: 80%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition-duration: 0.2s;
+
+    &:visited {
+        text-decoration: none;
+    }
+
+    &:hover {
+        filter: brightness(1.03);
+        transform: translateY(-3px);
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+
+    &.selected {
+        border: black solid 1px;
+    }
+}
+</style>
