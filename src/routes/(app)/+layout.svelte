@@ -3,21 +3,18 @@
 
     export let data;
 
-    console.log(data.route);
-
-
 </script>
 
 <div id="app">
     <div id="sidebar">
         <img class="logo" src={logo} alt="logo" width="50%">
-        <a class={"button" + ((data.route === "/servers") ? " selected" : "")} href="/servers">
+        <a class={"button" + ((data.route === "/(app)/servers") ? " selected" : "")} href="/servers">
             Servers
         </a>
-        <a class={"button" + ((data.route === "/communities") ? " selected" : "")} href="/communities">
+        <a class={"button" + ((data.route === "/(app)/communities") ? " selected" : "")} href="/communities">
             Community
         </a>
-        <a class={"button" + ((data.route === "/friends") ? " selected" : "")} href="/friends">
+        <a class={"button" + ((data.route === "/(app)/friends") ? " selected" : "")} href="/friends">
             Friends
         </a>
     </div>
