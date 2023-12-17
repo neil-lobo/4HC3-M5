@@ -12,14 +12,15 @@
 	};
 
 	export let id: number;
+	export let community: boolean = false;
 </script>
 
 <section>
-	<a href={`/server/${id}`}>
+	<a href={`/${community ? "community" : "server"}/${id}`}>
 		<img id="logo" src={serverData.logo} alt="logo" width="160px" />
 	</a>
 	<div class="info-container">
-		<a href={`/server/${id}`}>
+		<a href={`/${community ? "community" : "server"}/${id}`}>
 			<h1>{serverData.name}</h1>
 		</a>
 		<br />
@@ -35,7 +36,9 @@
 		</div>
 	</div>
 	<!-- <div class="add-container"> -->
-	<img id="add" src={addIcon} alt="add" width="120px" />
+	{#if !community}
+		<img id="add" src={addIcon} alt="add" width="120px" />
+	{/if}
 	<!-- </div> -->
 </section>
 

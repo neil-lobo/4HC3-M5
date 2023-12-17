@@ -33,8 +33,8 @@
 		</div>
 	</div>
 	<div class="communities">
-		{#each filteredCommunities as community}
-			<Server serverData={community} />
+		{#each filteredCommunities as community, i}
+			<Server serverData={community} id={i} community/>
 			<br />
 		{/each}
 	</div>
