@@ -50,5 +50,28 @@
 			"serverIds": [0]
 		}
 	],
-	"searchTags": ["PVP", "RPG", "Survival", "Skyblock", "Prison"]
+	"searchTags": ["PVP", "RPG", "Survival", "Skyblock", "Prison"],
+	"friends": [0, 1],
+	"users": [
+		{
+			"username": "steve",
+			"pfp": "/user/0/pfp.png",
+			"status": "online",
+			"servers": {
+				"current": 0,
+				"all": [0, 1, 2],
+				"mutual": [0, 1]
+			}
+		},
+		{
+			"username": "steve",
+			"pfp": "/user/0/pfp.png",
+			"status": "online",
+			"servers": {
+				"current": 0,
+				"all": [0, 1, 2],
+				"mutual": [0, 1]
+			}
+		}
+	]
 }
