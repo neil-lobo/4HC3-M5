@@ -1,17 +1,27 @@
 <script lang="ts">
-	import Searchbar from "$lib/components/Searchbar.svelte";
+	import Filter from "$lib/components/Filter.svelte";
+    import Searchbar from "$lib/components/Searchbar.svelte";
     import Server from "$lib/components/Server.svelte";
 
     export let data;
     let searchbar: string = "";
+    let filter: string = "";
 
-    $: filteredServers = data.servers.filter(server => server.name.toLowerCase().startsWith(searchbar.trim().toLowerCase()));
+    $:  filteredServers = data.servers.filter(server => {
+            return server.name.toLowerCase().startsWith(searchbar.trim().toLowerCase())
+        }).filter(server => {
+            if (filter == "") return true;
+            return server.tags.includes(filter)
+        });
 </script>
 
 <section>
     <h1>Servers</h1>
     <div class="filters">
         <Searchbar bind:value={searchbar} />
+        <div style="margin-left: 10px;">
+            <Filter bind:selected={filter}/>
+        </div>
     </div>
     <div class="servers">
         {#each filteredServers as server}
