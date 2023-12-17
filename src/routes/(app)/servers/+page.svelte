@@ -42,6 +42,9 @@ section {
 }
 
 .servers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     overflow-y: scroll;
     padding-right: 10px;
     width: 70%;

@@ -43,12 +43,13 @@ h1 {
 }
 
 section {
+    max-width: 1000px;
+    width: 100%;
     background-color: #D9D9D9;
     padding: 30px;
     border-radius: 8px;
     display: flex;
     flex-direction: row;
-    // justify-content: center;
     align-items: center;
 
     #logo {
