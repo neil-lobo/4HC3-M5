@@ -2,7 +2,6 @@
 	import addIcon from '$lib/icons/add.svg';
 	import person from '$lib/icons/person.svg';
 	import Tag from '$lib/components/Tag.svelte';
-	import { text } from '@sveltejs/kit';
 
 	export let serverData: {
 		name: string;
@@ -42,7 +41,7 @@
 
 	section {
 		max-width: 1000px;
-		width: 100%;
+		width: 90%;
 		background-color: #d9d9d9;
 		padding: 30px;
 		border-radius: 8px;
@@ -66,6 +65,7 @@
 
 			.tags {
 				display: flex;
+				flex-wrap: wrap;
 			}
 		}
 
