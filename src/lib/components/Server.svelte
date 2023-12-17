@@ -29,7 +29,7 @@
 		</div>
 	</div>
 	<!-- <div class="add-container"> -->
-	<img id="add" src={addIcon} alt="add" width="40px" />
+	<img id="add" src={addIcon} alt="add" width="120px"/>
 	<!-- </div> -->
 </section>
 
