@@ -1,6 +1,5 @@
 <script>
     import person from "$lib/icons/person.svg"
-	import { error } from "@sveltejs/kit";
 
     export let data;
     let buttonText = "Add Server +";
