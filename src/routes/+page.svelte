@@ -10,6 +10,9 @@
 	<div class="inputs">
 		<input type="text" name="username" id="username" placeholder="Username" />
 		<input type="password" name="password" id="password" placeholder="Password" />
+		<a href="/forgot">
+			forgot password?
+		</a>
 		<a href="/servers">
 			<button>Login</button>
 		</a>
