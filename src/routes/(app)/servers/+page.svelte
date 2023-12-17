@@ -26,8 +26,8 @@
 		</div>
 	</div>
 	<div class="servers">
-		{#each filteredServers as server}
-			<Server serverData={server} />
+		{#each filteredServers as server, i}
+			<Server serverData={server} id={i} />
 			<br />
 		{/each}
 	</div>
