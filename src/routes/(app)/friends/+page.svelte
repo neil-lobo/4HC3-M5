@@ -17,9 +17,16 @@
 		<Searchbar bind:value={searchbar} />
 	</div>
 	<div class="friends">
-		{#each filteredFriends as friend}
-			<!-- <Server serverData={server} /> -->
-            {JSON.stringify(friend)}
+		{#each filteredFriends as friend, i}
+			<div class="friend">
+				<h1>{friend.username}</h1>
+				{#if friend.status === "online"}
+					<span class="online status">Online</span>
+				{:else}
+					<span class="offline status">Offline</span>
+				{/if}
+				<a href={`/user/${i}`}>View Profile</a>
+			</div>
 			<br />
 		{/each}
 	</div>
@@ -49,8 +56,37 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		overflow-y: scroll;
 		padding-right: 10px;
-		width: 70%;
+		width: 60%;
+		
+		
+		.friend {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			background-color: #d9d9d9;
+			border-radius: 7px;
+			padding: 30px;
+
+			h1 {
+				margin: 0;
+				margin-right: 130px;
+				
+			}
+			
+			.status {
+				margin-right: 30px;
+			}
+
+			.online {
+				font-weight: bold;
+				color: green;
+			}
+        
+			.offline {
+				font-weight: bold;
+				color: red;
+			}
+		}
 	}
 </style>
