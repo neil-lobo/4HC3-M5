@@ -1,17 +1,28 @@
 <script lang="ts">
+    import Filter from "$lib/components/Filter.svelte";
 	import Searchbar from "$lib/components/Searchbar.svelte";
     import Server from "$lib/components/Server.svelte";
 
     export let data;
     let searchbar: string = "";
+    let filter: string = "";
 
-    $: filteredCommunities = data.communities.filter(communitiy => communitiy.name.toLowerCase().startsWith(searchbar.trim().toLowerCase()));
+    $:  filteredCommunities = data.communities.filter(communitiy => {
+            return communitiy.name.toLowerCase().startsWith(searchbar.trim().toLowerCase())
+        }).filter(communitiy => {
+            if (filter == "") return true;
+            return communitiy.tags.includes(filter)
+        });
+
 </script>
 
 <section>
     <h1>Communities</h1>
     <div class="filters">
         <Searchbar bind:value={searchbar} />
+        <div style="margin-left: 10px;">
+            <Filter bind:selected={filter}/>
+        </div>
     </div>
     <div class="communities">
         {#each filteredCommunities as community}
