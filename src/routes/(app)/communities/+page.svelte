@@ -20,7 +20,11 @@
 <section>
 	<h1>Communities</h1>
 	<div style="text-align:center;">
-	<h3>Communities allow you to explore servers that popular streamers and content creators <br> are playing on, have played on, or recommended! <br> Have fun exploring these servers that your favourite creators know about <br> and meet others who may also know the creators you follow!</h3>
+		<h3>
+			Communities allow you to explore servers that popular streamers and content creators <br />
+			are playing on, have played on, or recommended! <br /> Have fun exploring these servers that
+			your favourite creators know about <br /> and meet others who may also know the creators you follow!
+		</h3>
 	</div>
 	<div class="filters">
 		<Searchbar bind:value={searchbar} />

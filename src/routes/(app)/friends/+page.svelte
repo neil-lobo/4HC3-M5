@@ -4,11 +4,13 @@
 
 	let searchbar: string = '';
 
-	$: filteredFriends = data.friends.map(friendId => {
-        return data.users[friendId]
-    }).filter(friend => {
-        return friend.username.toLowerCase().startsWith(searchbar.trim().toLowerCase());
-    })
+	$: filteredFriends = data.friends
+		.map((friendId) => {
+			return data.users[friendId];
+		})
+		.filter((friend) => {
+			return friend.username.toLowerCase().startsWith(searchbar.trim().toLowerCase());
+		});
 </script>
 
 <section>
@@ -20,7 +22,7 @@
 		{#each filteredFriends as friend, i}
 			<div class="friend">
 				<h1>{friend.username}</h1>
-				{#if friend.status === "online"}
+				{#if friend.status === 'online'}
 					<span class="online status">Online</span>
 				{:else}
 					<span class="offline status">Offline</span>
@@ -58,8 +60,7 @@
 		align-items: center;
 		padding-right: 10px;
 		width: 60%;
-		
-		
+
 		.friend {
 			display: flex;
 			flex-direction: row;
@@ -71,9 +72,8 @@
 			h1 {
 				margin: 0;
 				margin-right: 130px;
-				
 			}
-			
+
 			.status {
 				margin-right: 30px;
 			}
@@ -82,7 +82,7 @@
 				font-weight: bold;
 				color: green;
 			}
-        
+
 			.offline {
 				font-weight: bold;
 				color: red;

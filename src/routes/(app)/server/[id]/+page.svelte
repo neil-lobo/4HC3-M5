@@ -66,7 +66,7 @@
 
 	.server-container {
 		// border: red solid 1px;
-		width: 80%;
+		width: 70%;
 		display: flex;
 		flex-direction: row;
 

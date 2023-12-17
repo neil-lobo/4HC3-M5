@@ -4,15 +4,15 @@
 	import Tag from '$lib/components/Tag.svelte';
 
 	export let userData: {
-        username: string,
-        pfp: string,
-        status: "online" | "offline",
-        servers: {
-            current: number,
-            all: number[],
-            mutual: number[]
-        }
-    };
+		username: string;
+		pfp: string;
+		status: 'online' | 'offline';
+		servers: {
+			current: number;
+			all: number[];
+			mutual: number[];
+		};
+	};
 </script>
 
 <section>

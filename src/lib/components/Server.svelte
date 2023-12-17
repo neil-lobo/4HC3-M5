@@ -10,12 +10,18 @@
 		playerCount: string;
 		tags: string[];
 	};
+
+	export let id: number;
 </script>
 
 <section>
-	<img id="logo" src={serverData.logo} alt="logo" width="160px" />
+	<a href={`/server/${id}`}>
+		<img id="logo" src={serverData.logo} alt="logo" width="160px" />
+	</a>
 	<div class="info-container">
-		<h1>{serverData.name}</h1>
+		<a href={`/server/${id}`}>
+			<h1>{serverData.name}</h1>
+		</a>
 		<br />
 		<div class="player-count">
 			<img src={person} alt="users" />
@@ -29,7 +35,7 @@
 		</div>
 	</div>
 	<!-- <div class="add-container"> -->
-	<img id="add" src={addIcon} alt="add" width="120px"/>
+	<img id="add" src={addIcon} alt="add" width="120px" />
 	<!-- </div> -->
 </section>
 
@@ -56,6 +62,15 @@
 		.info-container {
 			margin-left: 50px;
 			flex: 1;
+
+			a {
+				text-decoration: none;
+				color: black;
+			}
+
+			a:visited {
+				color: black;
+			}
 
 			.player-count {
 				display: flex;
