@@ -1,7 +1,17 @@
 <script lang="ts">
-	import addIcon from '$lib/icons/add.svg';
+	// import addIcon from '$lib/icons/add.svg';
 	import person from '$lib/icons/person.svg';
 	import Tag from '$lib/components/Tag.svelte';
+
+	let buttonText = 'Add Server +';
+
+		function copy() {
+			buttonText = 'IP copied to clipboard!';
+
+			setTimeout(() => {
+				buttonText = 'Add Server +';
+			}, 5000);
+		}
 
 	export let serverData: {
 		name: string;
@@ -35,11 +45,12 @@
 			{/each}
 		</div>
 	</div>
-	<!-- <div class="add-container"> -->
+	<div class="add-container">
 	{#if !community}
-		<img id="add" src={addIcon} alt="add" width="120px" />
+		<button on:click={copy}>{buttonText}</button>
+		<!-- <img id="add" src={addIcon} alt="add" width="120px" /> -->
 	{/if}
-	<!-- </div> -->
+	</div>
 </section>
 
 <style scoped lang="scss">
@@ -87,16 +98,43 @@
 			}
 		}
 
-		#add {
-			height: 100%;
-			align-self: flex-start;
-			cursor: pointer;
-			transition-duration: 0.1s;
+		.add-container{
+			margin-right: 5px;
 
-			&:hover {
-				transform: translateY(-3px);
+			button {
+				border: none;
+				color: black;
+				background-color: #c3c3c3;
+				font-size: 15px;
+				width: 100%;
+				height: 80px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border-radius: 7px;
+				margin-top: 10px;
+				margin-bottom: 10px;
 				transition-duration: 0.2s;
+
+				&:hover {
+					filter: brightness(1.03);
+					transform: translateY(-3px);
+					transition-duration: 0.4s;
+					cursor: pointer;
+				}
 			}
 		}
+
+		// #add {
+		// 	height: 100%;
+		// 	align-self: flex-start;
+		// 	cursor: pointer;
+		// 	transition-duration: 0.1s;
+
+		// 	&:hover {
+		// 		transform: translateY(-3px);
+		// 		transition-duration: 0.2s;
+		// 	}
+		// }
 	}
 </style>
