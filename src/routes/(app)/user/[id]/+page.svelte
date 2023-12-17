@@ -47,10 +47,12 @@
 			{data.user?.about}
 		</div>
 		<div class="current-server-container">
-			<h3>Currently playing on:</h3>
-			<br />
-			{#if data.servers?.[data.user?.servers.current ?? 0]}
-				<Server serverData={data.servers?.[data.user?.servers.current ?? 0]} />
+			{#if data.user?.status == 'online'}
+				<h3>Currently playing on:</h3>
+				<br />
+				{#if data.servers?.[data.user?.servers.current ?? 0]}
+					<Server serverData={data.servers?.[data.user?.servers.current ?? 0]} />
+				{/if}
 			{/if}
 		</div>
 		<div class="all-servers-continer">
