@@ -1,7 +1,7 @@
 import type { LayoutLoad } from './$types';
 
 export const load: LayoutLoad = ({ route }) => {
-    return {
-        route: route.id
-    }
+	return {
+		route: route.id
+	};
 };
