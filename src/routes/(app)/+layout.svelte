@@ -31,6 +31,7 @@
 	}
 
 	#sidebar {
+		position: fixed;
 		height: 100vh;
 		width: 15vw;
 		/* border: red solid 1px; */
