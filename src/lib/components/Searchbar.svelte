@@ -5,11 +5,15 @@
 	// $: {
 	//     console.log(value);
 	// }
+
+	export let addfriend: boolean = false;
 </script>
 
 <section>
-	<img src={search} alt="search" width="30px" />
-	<input type="text" placeholder="Search" bind:value />
+	{#if !addfriend}
+		<img src={search} alt="search" width="30px" />
+		<input type="text" placeholder="Search" bind:value />
+	{/if}
 </section>
 
 <style scoped lang="scss">

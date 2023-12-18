@@ -16,6 +16,9 @@
 		<a href="/servers">
 			<button>Login</button>
 		</a>
+		<a href="/forgot">
+			don't have an account? create one now!
+		</a>
 	</div>
 </section>
 
