@@ -1,3 +1,7 @@
+<script>
+    let username = '';
+</script>
+
 <a href="/friends">
     <button>back</button>
 </a>
@@ -5,7 +9,7 @@
 <section>
     <h3>Add a friend</h3>
     <div class="inputs">
-        <input type="text" name="username" id="username" placeholder="Friends Username" />
+        <input bind:value={username} placeholder="Friends Username" />
         <button>+ add friend</button>
     </div>
 </section>
