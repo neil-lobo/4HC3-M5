@@ -5,26 +5,30 @@
 
 	let allServers =
 		data.user?.servers.all.map((serverId) => {
-			return (
-				data.servers?.[serverId] ?? {
-					name: 'error',
-					logo: 'error',
-					description: 'error',
-					playerCount: 'error',
-					tags: []
+			return ({
+					data: data.servers?.[serverId] ?? {
+						name: 'error',
+						logo: 'error',
+						description: 'error',
+						playerCount: 'error',
+						tags: []
+					},
+					id: serverId
 				}
 			);
 		}) ?? [];
 
 	let mutualServers =
 		data.user?.servers.mutual.map((serverId) => {
-			return (
-				data.servers?.[serverId] ?? {
-					name: 'error',
-					logo: 'error',
-					description: 'error',
-					playerCount: 'error',
-					tags: []
+			return ({
+					data: data.servers?.[serverId] ?? {
+						name: 'error',
+						logo: 'error',
+						description: 'error',
+						playerCount: 'error',
+						tags: []
+					},
+					id: serverId
 				}
 			);
 		}) ?? [];
@@ -51,7 +55,7 @@
 				<h3>Currently playing on:</h3>
 				<br />
 				{#if data.servers?.[data.user?.servers.current ?? 0]}
-					<Server serverData={data.servers?.[data.user?.servers.current ?? 0]} />
+					<Server serverData={data.servers?.[data.user?.servers.current ?? 0]} id={data.user?.servers.current} />
 				{/if}
 			{/if}
 		</div>
@@ -59,14 +63,14 @@
 			<h3>Liked servers:</h3>
 			<br />
 			{#each allServers as server}
-				<Server serverData={server} />
+				<Server serverData={server.data} id={server.id}/>
 				<br />
 			{/each}
 		</div>
 		<div class="mutual-servers-continer">
 			<h3>Mutual servers:</h3>
 			{#each mutualServers as server}
-				<Server serverData={server} />
+				<Server serverData={server.data} id={server.id} />
 				<br />
 			{/each}
 		</div>
