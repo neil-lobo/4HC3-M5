@@ -31,6 +31,9 @@
 			</div>
 			<br />
 		{/each}
+		<a href='/add-friend'>
+			<button>+ add a friend</button>
+		</a>
 	</div>
 </section>
 
@@ -61,6 +64,13 @@
 		padding-right: 10px;
 		width: 60%;
 
+		button {
+			margin-top: 30px;
+			width: 140px;
+			height: 40px;
+			cursor: pointer;
+		}
+
 		.friend {
 			display: flex;
 			flex-direction: row;
@@ -87,6 +97,7 @@
 				font-weight: bold;
 				color: red;
 			}
+
 		}
 	}
 </style>
