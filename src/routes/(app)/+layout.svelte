@@ -14,7 +14,7 @@
 			class={'button' + (data.route === '/(app)/communities' ? ' selected' : '')}
 			href="/communities"
 		>
-			Community
+			Communities
 		</a>
 		<a class={'button' + (data.route === '/(app)/friends' ? ' selected' : '')} href="/friends">
 			Friends

@@ -40,6 +40,7 @@
 			{data.message}
 		</div>
 	{/if}
+
 </section>
 
 <style scoped lang="scss">
