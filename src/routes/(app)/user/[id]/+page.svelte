@@ -59,18 +59,19 @@
 				{/if}
 			{/if}
 		</div>
+		<div class="mutual-servers-continer">
+			<h3>Mutual servers:</h3>
+			<br>
+			{#each mutualServers as server}
+				<Server serverData={server.data} id={server.id} />
+				<br />
+			{/each}
+		</div>
 		<div class="all-servers-continer">
 			<h3>Liked servers:</h3>
 			<br />
 			{#each allServers as server}
 				<Server serverData={server.data} id={server.id}/>
-				<br />
-			{/each}
-		</div>
-		<div class="mutual-servers-continer">
-			<h3>Mutual servers:</h3>
-			{#each mutualServers as server}
-				<Server serverData={server.data} id={server.id} />
 				<br />
 			{/each}
 		</div>
