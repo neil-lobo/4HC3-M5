@@ -21,13 +21,24 @@
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		border: black solid 2px;
+		color: white;
+		border: white solid 2px;
 		border-radius: 7px;
 		font-size: 15px;
 
 		select {
 			outline: none;
 			border: none;
+			// background: none;
+			background-color: #5a82e7;
+			font-weight: bold;
+			font-weight: bold;
+			color: #f8c149;
+			
+			option {
+				background: none;
+				font-weight: bold;
+			}
 		}
 	}
 </style>

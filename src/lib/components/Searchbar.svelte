@@ -22,20 +22,25 @@
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		border: black solid 2px;
+		border: white solid 2px;
 		border-radius: 7px;
 		width: 300px;
-
+		
 		img {
 			margin: 6px;
 		}
-
+		
 		input {
+			color: #f8c149;
 			font-size: 15px;
 			border: none;
 			background: none;
 			outline: none;
 			width: 80%;
+
+			&::placeholder {
+				color: white;
+			}
 		}
 	}
 </style>

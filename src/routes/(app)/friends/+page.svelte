@@ -50,6 +50,17 @@
 		}
 	}
 
+	a {
+		color: white;
+
+		button {
+			background-color: #dba83a;
+			border-radius: 7px;
+			outline: none;
+			border: none;
+		}
+	}
+
 	.filters {
 		width: 90%;
 		margin: 30px;
@@ -75,7 +86,7 @@
 			display: flex;
 			flex-direction: row;
 			align-items: center;
-			background-color: #d9d9d9;
+			background-color: #405da7;
 			border-radius: 7px;
 			padding: 30px;
 
@@ -90,7 +101,7 @@
 
 			.online {
 				font-weight: bold;
-				color: green;
+				color: rgb(30, 212, 30);
 			}
 
 			.offline {

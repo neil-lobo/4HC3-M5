@@ -28,6 +28,11 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		color: white;
+	}
+
+	a {
+		color: white;
 	}
 
 	h1 {

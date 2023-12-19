@@ -47,9 +47,14 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		color: white;
 
 		h1 {
 			margin-top: 50px;
+		}
+
+		h3 {
+			font-weight: 100;
 		}
 	}
 

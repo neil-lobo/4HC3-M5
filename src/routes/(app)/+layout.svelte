@@ -19,7 +19,7 @@
 		<a class={'button' + (data.route === '/(app)/friends' ? ' selected' : '')} href="/friends">
 			Friends
 		</a>
-		<a href="/">Logout</a>
+		<a href="/" style="color: white">Logout</a>
 	</div>
 	<slot />
 </div>
@@ -35,7 +35,7 @@
 		height: 100vh;
 		width: 15vw;
 		/* border: red solid 1px; */
-		background-color: #e6e6e6;
+		background-color: #4d71cc;
 
 		display: flex;
 		flex-direction: column;
@@ -50,8 +50,8 @@
 	.button {
 		text-decoration: none;
 		// unset: all;
-		color: black;
-		background-color: #c3c3c3;
+		color: white;
+		background-color: #405da7;
 		width: 80%;
 		height: 50px;
 		display: flex;
@@ -74,7 +74,8 @@
 		}
 
 		&.selected {
-			background-color: #d8d8d8;
+			background-color: #dba83a;
+			color: black;
 		}
 	}
 </style>
