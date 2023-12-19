@@ -57,13 +57,14 @@
 	h1 {
 		font-size: 60px;
 		font-weight: 100;
+		color: white;
 	}
 
 	section {
 		max-width: 1000px;
 		width: 90%;
 		background-color: #405da7;
-		color: black;
+		color: white;
 		padding: 30px;
 		border-radius: 8px;
 		display: flex;
@@ -80,11 +81,11 @@
 
 			a {
 				text-decoration: none;
-				color: black;;
+				color: white;
 			}
 
 			a:visited {
-				color: black;;
+				color: white;
 			}
 
 			.player-count {

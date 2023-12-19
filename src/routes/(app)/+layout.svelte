@@ -50,7 +50,7 @@
 	.button {
 		text-decoration: none;
 		// unset: all;
-		color: black;
+		color: white;
 		background-color: #405da7;
 		width: 80%;
 		height: 50px;
