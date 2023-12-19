@@ -62,8 +62,8 @@
 	section {
 		max-width: 1000px;
 		width: 90%;
-		background-color: #405da7;
-		color: black;
+		background-color: #365cbb;
+		color: white;
 		padding: 30px;
 		border-radius: 8px;
 		display: flex;
@@ -105,7 +105,7 @@
 			button {
 				border: none;
 				color: black;
-				background-color: #dba83a;
+				background-color: #e9ae1c;
 				font-size: 15px;
 				width: 100%;
 				height: 80px;
