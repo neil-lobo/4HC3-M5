@@ -7,6 +7,6 @@ back
 
 <style>
     a, h3 {
-        color: white;
+        color: black;
     }
 </style>

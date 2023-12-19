@@ -19,7 +19,7 @@
 		<a class={'button' + (data.route === '/(app)/friends' ? ' selected' : '')} href="/friends">
 			Friends
 		</a>
-		<a href="/" style="color: white">Logout</a>
+		<a href="/" style="color: black">Logout</a>
 	</div>
 	<slot />
 </div>
@@ -50,7 +50,7 @@
 	.button {
 		text-decoration: none;
 		// unset: all;
-		color: white;
+		color: black;
 		background-color: #405da7;
 		width: 80%;
 		height: 50px;

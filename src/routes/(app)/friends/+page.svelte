@@ -51,7 +51,7 @@
 	}
 
 	a {
-		color: white;
+		color: black;
 
 		button {
 			background-color: #dba83a;

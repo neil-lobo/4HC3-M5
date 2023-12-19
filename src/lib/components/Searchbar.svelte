@@ -22,7 +22,7 @@
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		border: white solid 2px;
+		border: black solid 2px;
 		border-radius: 7px;
 		width: 300px;
 		
@@ -39,7 +39,7 @@
 			width: 80%;
 
 			&::placeholder {
-				color: white;
+				color: black;
 			}
 		}
 	}
