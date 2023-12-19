@@ -51,7 +51,7 @@
 		text-decoration: none;
 		// unset: all;
 		color: white;
-		background-color: #405da7;
+		background-color: #365cbb;
 		width: 80%;
 		height: 50px;
 		display: flex;
@@ -74,7 +74,7 @@
 		}
 
 		&.selected {
-			background-color: #dba83a;
+			background-color: #e9ae1c;
 			color: black;
 		}
 	}

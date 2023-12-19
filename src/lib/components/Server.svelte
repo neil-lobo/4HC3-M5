@@ -57,13 +57,13 @@
 	h1 {
 		font-size: 60px;
 		font-weight: 100;
-		color: white;
+		color: black;
 	}
 
 	section {
 		max-width: 1000px;
 		width: 90%;
-		background-color: #405da7;
+		background-color: #365cbb;
 		color: white;
 		padding: 30px;
 		border-radius: 8px;
@@ -81,11 +81,11 @@
 
 			a {
 				text-decoration: none;
-				color: white;
+				color: black;
 			}
 
 			a:visited {
-				color: white;
+				color: black;
 			}
 
 			.player-count {
@@ -106,7 +106,7 @@
 			button {
 				border: none;
 				color: black;
-				background-color: #dba83a;
+				background-color: #e9ae1c;
 				font-size: 15px;
 				width: 100%;
 				height: 80px;

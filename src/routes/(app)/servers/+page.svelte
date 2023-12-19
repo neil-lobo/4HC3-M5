@@ -40,7 +40,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-
+		
 		h1 {
 			margin-top: 50px;
 		}
