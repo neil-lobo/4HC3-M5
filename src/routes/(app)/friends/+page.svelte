@@ -47,9 +47,10 @@
 
 		h1 {
 			margin-top: 50px;
+			color: white;
 		}
 	}
-
+	
 	a {
 		color: white;
 

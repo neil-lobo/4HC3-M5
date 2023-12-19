@@ -57,6 +57,7 @@
 	h1 {
 		font-size: 60px;
 		font-weight: 100;
+		color: white;
 	}
 
 	section {
@@ -80,11 +81,11 @@
 
 			a {
 				text-decoration: none;
-				color: black;;
+				color: black;
 			}
 
 			a:visited {
-				color: black;;
+				color: black;
 			}
 
 			.player-count {
