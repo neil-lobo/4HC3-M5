@@ -1,5 +1,5 @@
 <script>
-	import person from '$lib/icons/person.svg';
+	import person from '$lib/icons/person2.svg';
 
 	export let data;
 	let buttonText = 'Add Server +';
