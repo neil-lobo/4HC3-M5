@@ -93,6 +93,7 @@
 			h1 {
 				margin: 0;
 				margin-right: 130px;
+				color: white;
 			}
 
 			.status {
