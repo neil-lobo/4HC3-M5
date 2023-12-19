@@ -21,8 +21,8 @@
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		color: white;
-		border: white solid 2px;
+		color: black;
+		border: black solid 2px;
 		border-radius: 7px;
 		font-size: 15px;
 

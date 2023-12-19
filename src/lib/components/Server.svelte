@@ -63,7 +63,7 @@
 		max-width: 1000px;
 		width: 90%;
 		background-color: #405da7;
-		color: white;
+		color: black;
 		padding: 30px;
 		border-radius: 8px;
 		display: flex;
@@ -80,11 +80,11 @@
 
 			a {
 				text-decoration: none;
-				color: white;;
+				color: black;;
 			}
 
 			a:visited {
-				color: white;;
+				color: black;;
 			}
 
 			.player-count {

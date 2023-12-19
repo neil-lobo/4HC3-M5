@@ -47,7 +47,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		color: white;
+		color: black;
 
 		h1 {
 			margin-top: 50px;
