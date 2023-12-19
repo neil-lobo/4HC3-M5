@@ -90,11 +90,12 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		color: white;
 
 		.status {
 			.online {
 				font-weight: bold;
-				color: green;
+				color: rgb(30, 212, 30);;
 			}
 
 			.offline {

@@ -51,6 +51,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		color: white;
 
 		.about-container {
 			margin-top: 50px;

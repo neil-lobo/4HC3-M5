@@ -4,3 +4,9 @@
 <a href="/">
 back
 </a>
+
+<style>
+    a, h3 {
+        color: white;
+    }
+</style>

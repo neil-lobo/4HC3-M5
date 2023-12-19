@@ -45,6 +45,7 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		color: white;
 	}
 
 	.error {
@@ -78,7 +79,7 @@
 			button {
 				border: none;
 				color: black;
-				background-color: #c3c3c3;
+				background-color: #dba83a;
 				font-size: 15px;
 				width: 80%;
 				height: 50px;

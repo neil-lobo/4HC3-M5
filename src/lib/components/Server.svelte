@@ -62,7 +62,8 @@
 	section {
 		max-width: 1000px;
 		width: 90%;
-		background-color: #d9d9d9;
+		background-color: #405da7;
+		color: white;
 		padding: 30px;
 		border-radius: 8px;
 		display: flex;
@@ -79,11 +80,11 @@
 
 			a {
 				text-decoration: none;
-				color: black;
+				color: white;;
 			}
 
 			a:visited {
-				color: black;
+				color: white;;
 			}
 
 			.player-count {
@@ -104,7 +105,7 @@
 			button {
 				border: none;
 				color: black;
-				background-color: #c3c3c3;
+				background-color: #dba83a;
 				font-size: 15px;
 				width: 100%;
 				height: 80px;
