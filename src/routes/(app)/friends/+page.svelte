@@ -47,11 +47,12 @@
 
 		h1 {
 			margin-top: 50px;
+			color: white;
 		}
 	}
 
 	a {
-		color: black;
+		color: white;
 
 		button {
 			background-color: #dba83a;
