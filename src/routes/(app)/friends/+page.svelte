@@ -51,10 +51,10 @@
 	}
 
 	a {
-		color: black;
+		color: white;
 
 		button {
-			background-color: #dba83a;
+			background-color: #e9ae1c;
 			border-radius: 7px;
 			outline: none;
 			border: none;
@@ -86,7 +86,7 @@
 			display: flex;
 			flex-direction: row;
 			align-items: center;
-			background-color: #405da7;
+			background-color: #365cbb;
 			border-radius: 7px;
 			padding: 30px;
 
