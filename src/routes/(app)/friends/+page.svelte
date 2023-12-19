@@ -21,7 +21,7 @@
 	<div class="friends">
 		{#each filteredFriends as friend, i}
 			<div class="friend">
-				<h1 style="color: black">{friend.username}</h1>
+				<h1>{friend.username}</h1>
 				{#if friend.status === 'online'}
 					<span class="online status">Online</span>
 				{:else}
@@ -47,16 +47,12 @@
 
 		h1 {
 			margin-top: 50px;
-			color: black;
+			color: white;
 		}
-	}
-
-	h1 {
-		color: black;
 	}
 	
 	a {
-		color: black;
+		color: white;
 
 		button {
 			background-color: #e9ae1c;

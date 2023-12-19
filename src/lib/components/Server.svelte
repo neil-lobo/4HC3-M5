@@ -57,7 +57,7 @@
 	h1 {
 		font-size: 60px;
 		font-weight: 100;
-		color: black;
+		color: white;
 	}
 
 	section {
