@@ -52,7 +52,7 @@
 	}
 
 	a {
-		color: black;
+		color: white;
 
 		button {
 			background-color: #e9ae1c;
@@ -94,6 +94,7 @@
 			h1 {
 				margin: 0;
 				margin-right: 130px;
+				color: white;
 			}
 
 			.status {

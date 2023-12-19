@@ -33,7 +33,7 @@
 			background-color: #5a82e7;
 			font-weight: bold;
 			font-weight: bold;
-			// color: #f8c149;
+			color: black;
 			
 			option {
 				background: none;

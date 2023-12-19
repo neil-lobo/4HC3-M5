@@ -31,7 +31,7 @@
 		}
 		
 		input {
-			color: #f8c149;
+			color: black;
 			font-size: 15px;
 			border: none;
 			background: none;
